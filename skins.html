@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            width: 80%;
+            max-width: 1000px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/150" alt="Image 1">
+        <img src="https://via.placeholder.com/150" alt="Image 2">
+        <img src="https://via.placeholder.com/150" alt="Image 3">
+        <img src="https://via.placeholder.com/150" alt="Image 4">
+        <img src="https://via.placeholder.com/150" alt="Image 5">
+        <img src="https://via.placeholder.com/150" alt="Image 6">
+        <img src="https://via.placeholder.com/150" alt="Image 7">
+        <img src="https://via.placeholder.com/150" alt="Image 8">
+        <img src="https://via.placeholder.com/150" alt="Image 9">
+        <img src="https://via.placeholder.com/150" alt="Image 10">
+        <img src="https://via.placeholder.com/150" alt="Image 11">
+        <img src="https://via.placeholder.com/150" alt="Image 12">
+        <img src="https://via.placeholder.com/150" alt="Image 13">
+        <img src="https://via.placeholder.com/150" alt="Image 14">
+        <img src="https://via.placeholder.com/150" alt="Image 15">
+    </div>
+</body>
+</html>
