@@ -30,8 +30,8 @@ html, body {
     
     display: flex;
     align-items: center;
-    background-color: white;
-    color: black;
+    background-color: rgb(250, 247, 247);
+    color: rgb(0, 0, 0);
     gap: 10px;
 }
 

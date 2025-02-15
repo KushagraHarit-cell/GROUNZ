@@ -10,15 +10,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f4;
+            min-height: 150vh;
+            background-color: #f4f4f4c7;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            width: 80%;
-            max-width: 1000px;
+            grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+            gap: 20px;
+            width: 180%;
+            max-width: 1800px;
         }
         .image-container {
             position: relative;
@@ -27,7 +27,8 @@
         .gallery img {
             width: 100%;
             height: auto;
-            border-radius: 10px;
+            border-radius: 20px;
+            border: 3px solid white;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             pointer-events: none;
         }
@@ -39,39 +40,66 @@
             display: block;
             margin-top: 5px;
             padding: 5px 10px;
-            background-color: #007bff;
+            background-color: #024183;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 15px;
             font-size: 14px;
         }
         .download-btn:hover {
-            background-color: #0056b3;
+            background-color: #014ea0;
         }
+        .gallery {
+            position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap; /* Prevents text from wrapping */
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;}
+    h1{
+        font-size: 80px;
+        font-weight:bolder;
+        color: #f5f1f1;
+        
+    }
+    #html, body {
+    background-color: rgb(0, 0, 0); /* Change to any color */
+    margin: 0;
+    height: 100%;
+}
+
+
+        
     </style>
 </head>
 <body>
+    <div id="background">
+
+    <h1>OUR COLLECTION</h1>
     <div class="gallery">
         <div class="image-container">
-            <img src="https://4kwallpapers.com/images/walls/thumbs_3t/19856.jpg" alt="Image 1">
-            <a href="https://4kwallpapers.com/images/walls/thumbs_3t/19856.jpg" download="image1.jpg" class="download-btn">Download</a>
+            <img src="dragon-ball-legends.jpeg" alt="Image 1">
+            <a href="dragon-ball-legends.jpeg" download="image1.jpg" class="download-btn">Download</a>
         </div>
         <div class="image-container">
-            <img src="https://images.wallpapersden.com/image/download/dragon-ball-gt-goku_bmZubmmUmZqaraWkpJRnbmZnrWZraGc.jpg" alt="Image 2">
-            <a href="https://images.wallpapersden.com/image/download/dragon-ball-gt-goku_bmZubmmUmZqaraWkpJRnbmZnrWZraGc.jpg" download="image2.jpg" class="download-btn">Download</a>
+            <img src="Goku.jpg" alt="Image 2">
+            <a href="Goku.jpg" download="image2.jpg" class="download-btn">Download</a>
         </div>
         <div class="image-container">
-            <img src="https://4kwallpapers.com/images/walls/thumbs_3t/13399.jpg" alt="Image 3">
-            <a href="https://4kwallpapers.com/images/walls/thumbs_3t/13399.jpg" download="image3.jpg" class="download-btn">Download</a>
+            <img src="super-saiyan-goku.jpeg" alt="Image 3">
+            <a href="dragon-ball-legends.jpeg" download="image3.jpg" class="download-btn">Download</a>
         </div>
         <div class="image-container">
             <img src="https://4kwallpapers.com/images/wallpapers/goku-black-dragon-3840x2160-14721.jpg" alt="Image 4">
             <a href="https://4kwallpapers.com/images/wallpapers/goku-black-dragon-3840x2160-14721.jpg" download="image4.jpg" class="download-btn">Download</a>
         </div>
         <div class="image-container">
-            <img src="https://4kwallpapers.com/images/walls/thumbs/20837.jpg" alt="Image 5">
-            <a href="https://4kwallpapers.com/images/walls/thumbs/20837.jpg" download="image5.jpg" class="download-btn">Download</a>
+            <img src="super-saiyan-rose.png" alt="Image 5">
+            <a href="super-saiyan-rose.png" download="image5.jpg" class="download-btn">Download</a>
         </div>
     </div>
+</div>
 </body>
 </html>
