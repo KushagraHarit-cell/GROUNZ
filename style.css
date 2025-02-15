@@ -13,7 +13,7 @@ html, body {
 #main {
     height: 100%;
     width: 100%;
-    background-color: white;
+   
 }
 
 #nav {
@@ -27,12 +27,14 @@ html, body {
 }
 
 #nav-part1 {
+    
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 #nav h3 {
+
     font-size: 15px;
     border: 2px solid #000;
     font-weight: 500;
@@ -43,7 +45,7 @@ html, body {
 }
 
 #nav h3:hover {
-    background-color: black;
+    background-color: rgb(119, 139, 198);
     color: white;
 }
 
@@ -56,3 +58,42 @@ html, body {
     transform: translateY(-50%);
     cursor: pointer;
 }
+
+h1{
+    
+        color: rgb(0, 0, 0);
+        position: absolute;
+        top: 2.6%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        white-space: nowrap; /* Prevents text from wrapping */
+    
+}
+#one{
+    position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        white-space: nowrap; 
+
+}
+#two{
+    position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translate(-50%,-50%);
+        white-space: nowrap; 
+
+
+}
+video{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+
+}
+
+
