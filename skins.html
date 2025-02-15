@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Hover Effect</title>
+    <title>Image Hover Effect with Download</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             min-height: 100vh;
             background-color: #f4f4f4;
@@ -20,35 +20,58 @@
             width: 80%;
             max-width: 1000px;
         }
+        .image-container {
+            position: relative;
+            text-align: center;
+        }
         .gallery img {
             width: 100%;
             height: auto;
             border-radius: 10px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            pointer-events: none;
         }
         .gallery img:hover {
             transform: scale(1.1);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
+        .download-btn {
+            display: block;
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .download-btn:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
     <div class="gallery">
-        <img src="https://via.placeholder.com/150" alt="Image 1">
-        <img src="https://via.placeholder.com/150" alt="Image 2">
-        <img src="https://via.placeholder.com/150" alt="Image 3">
-        <img src="https://via.placeholder.com/150" alt="Image 4">
-        <img src="https://via.placeholder.com/150" alt="Image 5">
-        <img src="https://via.placeholder.com/150" alt="Image 6">
-        <img src="https://via.placeholder.com/150" alt="Image 7">
-        <img src="https://via.placeholder.com/150" alt="Image 8">
-        <img src="https://via.placeholder.com/150" alt="Image 9">
-        <img src="https://via.placeholder.com/150" alt="Image 10">
-        <img src="https://via.placeholder.com/150" alt="Image 11">
-        <img src="https://via.placeholder.com/150" alt="Image 12">
-        <img src="https://via.placeholder.com/150" alt="Image 13">
-        <img src="https://via.placeholder.com/150" alt="Image 14">
-        <img src="https://via.placeholder.com/150" alt="Image 15">
+        <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Image 1">
+            <a href="https://via.placeholder.com/150" download="image1.jpg" class="download-btn">Download</a>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Image 2">
+            <a href="https://via.placeholder.com/150" download="image2.jpg" class="download-btn">Download</a>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Image 3">
+            <a href="https://via.placeholder.com/150" download="image3.jpg" class="download-btn">Download</a>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Image 4">
+            <a href="https://via.placeholder.com/150" download="image4.jpg" class="download-btn">Download</a>
+        </div>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/150" alt="Image 5">
+            <a href="https://via.placeholder.com/150" download="image5.jpg" class="download-btn">Download</a>
+        </div>
     </div>
 </body>
 </html>
