@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OUR COLLECTION</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,6 +13,8 @@
             align-items: center;
             min-height: 150vh;
             background-color: #f4f4f4c7;
+            margin: 0;
+            overflow: hidden;
         }
         .gallery {
             display: grid;
@@ -48,115 +51,168 @@
             font-family: "Headland One", serif;
             font-weight: 400;
             font-style: normal;
-            
         }
         .download-btn:hover {
             background-color: #1100ff;
         }
         .gallery {
             position: absolute;
-    top: 59%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    white-space: nowrap; /* Prevents text from wrapping */
-    font-family: "Bebas Neue", serif;
-    font-weight: 400;
-    font-style: normal;}
-    h1{
-        font-size: 70px;
-        font-weight:bolder;
-        color: #f5f1f1;
-        
-    }
-    #html, body {
-    background: linear-gradient(to right,rgb(126, 116, 116),#091216) ; /* Change to any color */
-    margin: 0;
-    height: 100%;
-}
-
-
-        
+            top: 59%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            white-space: nowrap; /* Prevents text from wrapping */
+            font-family: "Bebas Neue", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        h1 {
+            font-size: 70px;
+            font-weight: bolder;
+            color: #f5f1f1;
+        }
+        #html, body {
+            background: linear-gradient(to right, rgb(126, 116, 116), #091216); /* Change to any color */
+            margin: 0;
+            height: 100%;
+        }
+        .intro-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeInOut 2.5s ease-in-out forwards;
+        }
+        .intro-text {
+            font-size: 80px;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: textFadeInOut 2.5s ease-in-out forwards;
+        }
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        @keyframes textFadeInOut {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            20% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            80% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+        }
     </style>
 </head>
 <body>
-    <div id="background">
-
-    <h1>OUR COLLECTION</h1>
-    <div class="gallery">
-        <div class="image-container">
-            <img src="dragon-ball-legends.jpeg" alt="Image 1">
-            <a href="dragon-ball-legends.jpeg" download="image1.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="Goku.jpg" alt="Image 2">
-            <a href="Goku.jpg" download="image2.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="super-saiyan-goku.jpeg" alt="Image 3">
-            <a href="dragon-ball-legends.jpeg" download="image3.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="goku-angry-dragon-3840x2160-13804.png" alt="Image 4">
-            <a href="goku-angry-dragon-3840x2160-13804.png" download="image4.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="super-saiyan-rose.png" alt="Image 5">
-            <a href="super-saiyan-rose.png" download="image5.jpg" class="download-btn">Download</a>
-        </div>    
-        <div class="image-container">
-            <img src="demon-slayer-5120x2880-17629.jpg" alt="Image 6">
-            <a href="demon-slayer-5120x2880-17629.jpg" download="image6.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="super-saiyan-blue-3840x2160-18937.jpg" alt="Image 7">
-            <a href="super-saiyan-blue-3840x2160-18937.jpg" download="image7.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="super-saiyan-blue-5120x2880-17603.jpg" alt="Image 8">
-            <a href="super-saiyan-blue-5120x2880-17603.jpg" download="image8.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="dragon-ball-3840x2160-19196.jpg" alt="Image 9">
-            <a href="dragon-ball-3840x2160-19196.jpg" download="image9.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="super-saiyan-dragon-5760x3240-20936.jpg" alt="Image 10">
-            <a href="super-saiyan-dragon-5760x3240-20936.jpg" download="image10.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="dragon-ball-z-goku.jpg" alt="Image 11">
-            <a href="dragon-ball-z-goku.jpg" download="image11.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="goku-black-super.jpg" alt="Image 12">
-            <a href="goku-black-super.jpg" download="image12.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="goku-dragon-ball-3840x2160-14373.jpg" alt="Image 13">
-            <a href="goku-dragon-ball-3840x2160-14373.jpg" download="image13.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="goku-vegeta-dragon-5120x2880-15843.jpg" alt="Image 14">
-            <a href="goku-vegeta-dragon-5120x2880-15843.jpg" download="image14.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="gogeta-dragon-ball-z-5k-5120x2880-16402.jpg" alt="Image 15">
-            <a href="gogeta-dragon-ball-z-5k-5120x2880-16402.jpg" download="image15.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="super-saiyan-blue-kaio-ken-goku-dragon-ball-super-5k-5760x3240-5091.jpg" alt="Image 16">
-            <a href="super-saiyan-blue-kaio-ken-goku-dragon-ball-super-5k-5760x3240-5091.jpg" download="image16.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="ultra-instinct-omen-6500x3656-20873.jpg" alt="Image 17">
-            <a href="ultra-instinct-omen-6500x3656-20873.jpg" download="image17.jpg" class="download-btn">Download</a>
-        </div>
-        <div class="image-container">
-            <img src="dragon-ball-3840x2160-20042.jpg" alt="Image 18">
-            <a href="dragon-ball-3840x2160-20042.jpg" download="image18.jpg" class="download-btn">Download</a>                   
-            
-       
+    <div class="intro-screen">
+        <div class="intro-text"> WELCOME TO OUR COLLECTION</div>
     </div>
-</div>
+
+    <div id="background">
+        <h1>OUR COLLECTION</h1>
+        <div class="gallery">
+            <div class="image-container">
+                <img src="dragon-ball-legends.jpeg" alt="Image 1">
+                <a href="dragon-ball-legends.jpeg" download="image1.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="Goku.jpg" alt="Image 2">
+                <a href="Goku.jpg" download="image2.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="super-saiyan-goku.jpeg" alt="Image 3">
+                <a href="super-saiyan-goku.jpeg" download="image3.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="goku-angry-dragon-3840x2160-13804.png" alt="Image 4">
+                <a href="goku-angry-dragon-3840x2160-13804.png" download="image4.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="super-saiyan-rose.png" alt="Image 5">
+                <a href="super-saiyan-rose.png" download="image5.jpg" class="download-btn">Download</a>
+            </div>    
+            <div class="image-container">
+                <img src="demon-slayer-5120x2880-17629.jpg" alt="Image 6">
+                <a href="demon-slayer-5120x2880-17629.jpg" download="image6.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="super-saiyan-blue-3840x2160-18937.jpg" alt="Image 7">
+                <a href="super-saiyan-blue-3840x2160-18937.jpg" download="image7.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="super-saiyan-blue-5120x2880-17603.jpg" alt="Image 8">
+                <a href="super-saiyan-blue-5120x2880-17603.jpg" download="image8.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="dragon-ball-3840x2160-19196.jpg" alt="Image 9">
+                <a href="dragon-ball-3840x2160-19196.jpg" download="image9.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="super-saiyan-dragon-5760x3240-20936.jpg" alt="Image 10">
+                <a href="super-saiyan-dragon-5760x3240-20936.jpg" download="image10.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="dragon-ball-z-goku.jpg" alt="Image 11">
+                <a href="dragon-ball-z-goku.jpg" download="image11.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="goku-black-super.jpg" alt="Image 12">
+                <a href="goku-black-super.jpg" download="image12.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="goku-dragon-ball-3840x2160-14373.jpg" alt="Image 13">
+                <a href="goku-dragon-ball-3840x2160-14373.jpg" download="image13.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="goku-vegeta-dragon-5120x2880-15843.jpg" alt="Image 14">
+                <a href="goku-vegeta-dragon-5120x2880-15843.jpg" download="image14.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="gogeta-dragon-ball-z-5k-5120x2880-16402.jpg" alt="Image 15">
+                <a href="gogeta-dragon-ball-z-5k-5120x2880-16402.jpg" download="image15.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="super-saiyan-blue-kaio-ken-goku-dragon-ball-super-5k-5760x3240-5091.jpg" alt="Image 16">
+                <a href="super-saiyan-blue-kaio-ken-goku-dragon-ball-super-5k-5760x3240-5091.jpg" download="image16.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="ultra-instinct-omen-6500x3656-20873.jpg" alt="Image 17">
+                <a href="ultra-instinct-omen-6500x3656-20873.jpg" download="image17.jpg" class="download-btn">Download</a>
+            </div>
+            <div class="image-container">
+                <img src="dragon-ball-3840x2160-20042.jpg" alt="Image 18">
+                <a href="dragon-ball-3840x2160-20042.jpg" download="image18.jpg" class="download-btn">Download</a>                   
+            </div>
+        </div>
+    </div>
 </body>
 </html>
