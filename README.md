@@ -16,7 +16,7 @@ Grounz is a fully functional wallpaper downloading website built using HTML, CSS
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/KushagraHarit-cell/grounz.git
+   git clone https://github.com/KushagraHarit-cell/GROUNZ.git
    ```
 2. Navigate to the project directory:
    ```sh
