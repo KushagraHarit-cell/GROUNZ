@@ -65,15 +65,23 @@ html, body {
 }
 
 h1{
-    
+        
         color: rgb(0, 0, 0);
         position: absolute;
-        top: 2.6%;
+        top: 5%;
         left: 50%;
         transform: translate(-50%,-50%);
         white-space: nowrap; /* Prevents text from wrapping */
+        font-family: "Allan", serif;
+        font-weight: 700;
+        font-style: normal;
     
 }
+#main h1:hover {
+    color: whitesmoke !important;  /* Changes text color to whitesmoke */
+    background-color: aquamarine;  /* Changes background to aquamarine */
+}
+
 #one{
     position: absolute;
         top: 80%;
@@ -133,5 +141,13 @@ a {
     color: inherit; /* Inherits the color from the parent */
     text-decoration: none; /* Removes the underline */
   }
-  
-
+.oneword{
+    color: red;
+    font-family: "Allan", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+#main h1:hover {
+    color: whitesmoke !important;
+    background-color: aquamarine;
+}
