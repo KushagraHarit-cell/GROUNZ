@@ -22,7 +22,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 30px;
+    padding: 1px 30px;
     position: relative;
 }
 
@@ -31,7 +31,11 @@ html, body {
     display: flex;
     align-items: center;
     color: black;
-    gap: 10px;
+    
+    
+    
+    border-radius: 20px;
+    gap: px;
 }
 
 #nav h3 {
@@ -125,4 +129,9 @@ video{
     font-style: normal;
     color: beige;
 }
+a {
+    color: inherit; /* Inherits the color from the parent */
+    text-decoration: none; /* Removes the underline */
+  }
+  
 
